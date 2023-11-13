@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-color: #297AC2;
+    --white-color: #fff;
+    --gray-color: gray;
+    --shadow-color: #1f2021;
+    --base-bg: #212428;
+    --bg1: #2e3033;
+    --input-bg: #191b1e; 
+}
+
+@font-face {
+    font-family: "iransans";
+    src: url("../fonts/FontsFree-Net-ir_sans.ttf");
+}
+
+body {
+    width: 100%;
+    background-color: var(--base-bg);
+    font-family: "iransans";
+}
+
+.section {
+    padding: 40px 80px;
+}
+
+.container {
+    direction: rtl;
+    width: 100%;
+    height: auto;
+}
+
+/* ######################################################## */
+
+.header {
+    width: 100%;
+    background: var(--base-bg);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+}
+
+.logo i{
+    margin-right: 100px;
+    margin-top: 10px; 
+    font-size: 60px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.nav li a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+
+/*************************************************/
+.personal-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px 80px;
+}
+.personal-info .my-pic{
+    width: 45%;
+    background-color: var(--bg1);
+    border-radius: 10px;
+}
+.personal-info .my-pic img{
+    width: 100%;
+}
+.personal-info  .text-info{
+    width: 45%;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.personal-info .text-info h1 > span{
+    color: var(--blue-color);
+}
+.personal-info .text-info > p{
+    font-size: 18px;
+}
+.contact > p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.contact .social-links i{
+    color: var(--white-color);
+    padding: 10px;
+    background: var(--bg1);
+    border-radius: 5px;
+}
+
+
+
+.section-title {
+    color: var(--blue-color);
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.service {
+    background-color: var(--input-bg);
+    color: var(--white-color);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.service i{
+    color: var(--blue-color);
+    font-size: 40px;
+}
+
+.service:hover {
+    background: var(--blue-color);
+}
+
+.service:hover i{
+    color: var(--white-color);
+}
+
+                  /* end of services */
+
+ .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+ }
+
+ .skills {
+    color: var(--white-color);
+ }
+
+.skill .progress-bar {
+    width: 100%;
+    border-radius: 50px;
+    height: 15px;
+    box-shadow: inset 5px 5px 10px var(--input-bg);
+ }
+
+.skill .progress-bar .inner-progress {
+    height: 15px;
+    border-radius: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #297ac2, var(--blue-color));
+    font-size: 12px;
+ }
+
+ #front {
+    width: 90%;
+ }
+
+ #back {
+    width: 40%;
+ }
+
+ #word{
+    width: 85%;
+ }
+
+ #seo {
+    width: 10%;
+ }
+
+                    /* end of skills */
+
+.samples {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.samples .sample {
+    flex-grow: 1;
+    margin: 10px;
+    background-color: var(--bg1);
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+}
+
+.sample > img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.sample .sample-like{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sample .sample-like .category {
+    color: var(--blue-color);
+}
+
+.sample .sample-like p{
+    color: var(--gray-color);
+}
+
+.sample-name {
+    color: var(--white-color);
+}
+
+        /* end of samples */
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+ 
+}        
+
+.contact-section .contact-info{
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-info > h3 {
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.contact-section .contact-form {
+    width: 50%;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    padding: 40px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+
+.contact-section .contact-form input ,
+.contact-section .contact-form textarea {
+    display: block;
+    width: 100%;
+    background-color: var(--input-bg);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+#send {
+    background-color: var(--gray-color);
+    color: var(--input-bg);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+    font-weight: bold;
+    font-family: "iransans";
+}
+
+.footer {
+    border: 1px solid var(--shadow-color);
+    text-align: center;
+}
+
+.footer > i{
+    font-size: 150px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width:760px){
+    .logo{
+        display: none;
+    }
+    .personal-info,
+    .contact-section{
+        flex-direction: column;
+    }
+    .personal-info .my-pic,
+    .personal-info  .text-info{
+        width: 100%;
+    }
+    .services{
+        grid-template-columns: auto;
+    }
+    .samples .sample{
+        width: 100%;
+    }
+    .contact-section .contact-info,
+    .contact-section .contact-form{
+        width: 100%;
+    }
+
+}
